@@ -5,7 +5,7 @@ This document records the focused mobile refinement applied after the initial la
 ## Goals
 
 - Keep the cinematic food-first presentation while exposing more useful content sooner.
-- Reduce unnecessary vertical scrolling on phones.
+- Reduce unnecessary vertical scrolling on phones and tablets.
 - Preserve the persistent Call / Directions conversion bar.
 - Harden the mobile navigation layering and keyboard behavior.
 - Improve iPhone safe-area behavior.
@@ -15,9 +15,9 @@ This document records the focused mobile refinement applied after the initial la
 
 ### Hero
 
-- Mobile hero height is now viewport-aware using `svh` and capped with `clamp()`.
-- Mobile headline scaling is reduced from the original 16vw treatment to a calmer 14vw maximum behavior.
-- Top/bottom spacing and hero metadata spacing are tightened so key CTAs stay comfortably within the opening experience.
+- Mobile hero height is viewport-aware using `svh`, with pixel fallbacks for older browsers.
+- Phone headline scaling is reduced from the original 16vw treatment to a calmer 14vw behavior.
+- Top/bottom spacing and hero metadata spacing are tightened so key CTAs remain prominent without making the opening screen unnecessarily tall.
 
 ### Navigation
 
@@ -28,8 +28,8 @@ This document records the focused mobile refinement applied after the initial la
 ### Content density
 
 - Large fixed minimum heights are removed from mobile menu cards and differentiator cards.
-- Food media uses aspect ratios instead of oversized minimum heights.
-- The experience image uses an aspect ratio rather than a fixed tall card.
+- Food media uses responsive, capped heights rather than oversized card minimums.
+- The experience image uses a viewport-capped height so full-width tablet layouts do not become excessively tall.
 - Mobile section spacing is slightly reduced.
 - Closing CTA height is reduced on phones.
 
@@ -54,5 +54,6 @@ This document records the focused mobile refinement applied after the initial la
 - Closed mobile navigation cannot receive pointer interaction.
 - Call and Directions remain reachable above device safe areas.
 - Menu cards no longer create unnecessary fixed-height whitespace.
+- Full-width tablet photography remains capped rather than becoming taller due to aspect-ratio expansion.
 - Gallery remains swipeable with visible next-card affordance.
 - Desktop layout at widths above 900px remains unchanged.
