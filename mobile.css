@@ -1,0 +1,169 @@
+/* Mobile polish layer — loaded only at <= 900px. */
+
+@media (max-width: 900px) {
+  .site-nav {
+    z-index: 90;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(-118%);
+    will-change: transform;
+  }
+
+  .site-nav.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  .hero {
+    min-height: clamp(700px, 92svh, 780px);
+  }
+
+  .hero-content {
+    padding-top: calc(var(--header-h) + 4.25rem);
+    padding-bottom: 5.5rem;
+  }
+
+  .image-card-tall {
+    min-height: 0;
+    aspect-ratio: 4 / 5;
+  }
+
+  .menu-card,
+  .menu-card-featured,
+  .menu-card-text {
+    min-height: 0;
+  }
+
+  .menu-card-media {
+    min-height: 0;
+    aspect-ratio: 4 / 3;
+  }
+
+  .menu-card-featured .menu-card-media {
+    aspect-ratio: 5 / 4;
+  }
+
+  .diff-card {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  body {
+    padding-bottom: calc(72px + env(safe-area-inset-bottom));
+  }
+
+  .hero {
+    min-height: clamp(650px, 92svh, 740px);
+  }
+
+  .hero-content {
+    padding-top: calc(var(--header-h) + 3.25rem);
+    padding-bottom: 5rem;
+  }
+
+  .hero h1 {
+    max-width: 9.5ch;
+    font-size: clamp(2.9rem, 14vw, 4.8rem);
+    line-height: .97;
+  }
+
+  .hero-lede {
+    margin-top: 1.4rem;
+    font-size: .96rem;
+  }
+
+  .hero-actions {
+    margin-top: 1.5rem;
+  }
+
+  .hero-meta {
+    margin-top: 1.35rem;
+    gap: .55rem;
+  }
+
+  .section {
+    padding-block: 4.4rem;
+  }
+
+  .image-card-tall {
+    aspect-ratio: 5 / 6;
+  }
+
+  .menu-card-copy {
+    padding: 1.25rem;
+  }
+
+  .menu-card h3 {
+    font-size: clamp(1.55rem, 8vw, 2.1rem);
+  }
+
+  .menu-card-media,
+  .menu-card-featured .menu-card-media {
+    aspect-ratio: 4 / 3;
+  }
+
+  .gallery-track {
+    gap: .75rem;
+    padding-inline: .05rem;
+    overscroll-behavior-inline: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .gallery-item,
+  .gallery-wide {
+    flex-basis: 82vw;
+    min-height: 0;
+    aspect-ratio: 4 / 5;
+  }
+
+  .closing-cta {
+    min-height: 540px;
+  }
+
+  .mobile-actions {
+    inset: auto .55rem max(.55rem, env(safe-area-inset-bottom));
+  }
+
+  .mobile-actions a {
+    min-height: 50px;
+  }
+}
+
+@media (max-width: 380px) {
+  .brand-copy small {
+    display: none;
+  }
+
+  .hero {
+    min-height: 650px;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.75rem, 13.5vw, 4rem);
+  }
+
+  .hero-actions {
+    gap: .55rem;
+  }
+
+  .hero-actions .button {
+    min-height: 48px;
+    padding-inline: .9rem;
+    font-size: .82rem;
+  }
+
+  .rating-pill,
+  .status-pill {
+    font-size: .7rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) and (max-width: 900px) {
+  .site-nav {
+    will-change: auto;
+  }
+}
