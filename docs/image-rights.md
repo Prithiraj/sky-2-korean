@@ -15,7 +15,7 @@ They are intentionally labelled in the UI and should be replaced with restaurant
 | Menu / gallery bibimbap | [Korean Bibimbap.jpg](https://commons.wikimedia.org/wiki/File:Korean_Bibimbap.jpg) | Shene81 | CC BY 3.0 | No |
 | Menu / gallery kimchi jjigae | [Kimchijigae.jpg](https://commons.wikimedia.org/wiki/File:Kimchijigae.jpg) | jetalone | CC BY 2.0 | No |
 | Menu grill | [Korean barbeque-Samgyeopsal-04.jpg](https://commons.wikimedia.org/wiki/File:Korean_barbeque-Samgyeopsal-04.jpg) | abex (Flickr) | CC BY-SA 2.0 | No |
-| Gallery ssam | [Korean banchan and ssam.JPG](https://commons.wikimedia.org/wiki/File:Korean_banchan_and_ssam.JPG) | See Commons file record | CC BY-SA 3.0 | No |
+| Gallery ssam | [Korean banchan and ssam.JPG](https://commons.wikimedia.org/wiki/File:Korean_banchan_and_ssam.JPG) | Clementina | CC BY-SA 3.0 | No |
 
 Attribution links are also included in the public footer.
 
