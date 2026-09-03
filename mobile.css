@@ -18,6 +18,7 @@
   }
 
   .hero {
+    min-height: 740px;
     min-height: clamp(700px, 92svh, 780px);
   }
 
@@ -28,7 +29,7 @@
 
   .image-card-tall {
     min-height: 0;
-    aspect-ratio: 4 / 5;
+    height: min(68svh, 620px);
   }
 
   .menu-card,
@@ -39,11 +40,11 @@
 
   .menu-card-media {
     min-height: 0;
-    aspect-ratio: 4 / 3;
+    height: clamp(300px, 48vw, 420px);
   }
 
   .menu-card-featured .menu-card-media {
-    aspect-ratio: 5 / 4;
+    height: clamp(340px, 52vw, 460px);
   }
 
   .diff-card {
@@ -57,6 +58,7 @@
   }
 
   .hero {
+    min-height: 680px;
     min-height: clamp(650px, 92svh, 740px);
   }
 
@@ -90,7 +92,7 @@
   }
 
   .image-card-tall {
-    aspect-ratio: 5 / 6;
+    height: min(58svh, 430px);
   }
 
   .menu-card-copy {
@@ -103,7 +105,7 @@
 
   .menu-card-media,
   .menu-card-featured .menu-card-media {
-    aspect-ratio: 4 / 3;
+    height: clamp(250px, 66vw, 340px);
   }
 
   .gallery-track {
